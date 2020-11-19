@@ -3,22 +3,21 @@ class Navbar {
     const element = document.createElement("section");
     element.id = "Navbar";
     element.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Checklist</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+      <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark text-right p-2">
+            <a href="#"><h5 class="text-white h5">Change password</h5></a> 
+            <a href="#"><h5 class="text-white h5">Logout</h5></a> 
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Checklist</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-user-circle"></i>User</span>
+            <i class="navbar-toggler-icon"></i>
+          </button>
+        </nav>
       </div>
-    </nav>
     `;
     document.querySelector("#root").appendChild(element);
   }

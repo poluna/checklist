@@ -1,0 +1,18 @@
+.navbar {
+  .navbar-brand {
+    color: rgb(230, 230, 230);
+    font-size: 1.3em;
+  }
+  .navbar-toggler i {
+    padding-right: 5px;
+  }
+  button {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  button:focus {
+    outline: 0;
+  }
+}
