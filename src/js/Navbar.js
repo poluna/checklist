@@ -3,21 +3,22 @@ class Navbar {
     const element = document.createElement("section");
     element.id = "Navbar";
     element.innerHTML = `
-      <div class="fixed-top">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark text-right p-2">
-            <a href="#"><h5 class="text-white h5">Change password</h5></a> 
-            <a href="#"><h5 class="text-white h5">Logout</h5></a> 
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="nav-content">
           <a class="navbar-brand" href="#">Checklist</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fas fa-user-circle"></i>User</span>
-            <i class="navbar-toggler-icon"></i>
-          </button>
-        </nav>
-      </div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <span class="user"><i class="fas fa-user-circle"></i>User</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Change password</a>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     `;
     document.querySelector("#root").appendChild(element);
   }

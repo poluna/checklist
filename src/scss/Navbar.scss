@@ -1,18 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+
 .navbar {
-  .navbar-brand {
-    color: rgb(230, 230, 230);
-    font-size: 1.3em;
-  }
-  .navbar-toggler i {
-    padding-right: 5px;
-  }
-  button {
-    width: 150px;
+  padding: 0.05rem 0.8rem;
+  .navbar-nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
   }
-  button:focus {
-    outline: 0;
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-brand {
+    font-family: "Cabin Sketch", cursive;
+    // color: rgb(230, 230, 230);
+    font-size: 1.7em;
+    background: -webkit-linear-gradient(rgb(36, 110, 145), rgb(123, 229, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .nav-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    width: 100px;
+  }
+  .user {
+    color: rgb(67, 217, 255);
+    font-size: 1.2em;
+  }
+  .user i {
+    padding-right: 6px;
   }
 }
